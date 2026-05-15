@@ -1,0 +1,40 @@
+{
+  "name": "@ping-zero/client",
+  "version": "0.1.0",
+  "description": "Realtime messaging client for ping-zero — browser & Node.js compatible",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "echo 'no lint configured'"
+  },
+  "dependencies": {
+    "@ping-zero/prisma": "workspace:*",
+    "socket.io-client": "^4.8.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "5.9.2"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ping-zero",
+    "directory": "packages/client"
+  },
+  "homepage": "https://github.com/your-username/ping-zero#readme",
+  "keywords": ["socket.io", "chat", "realtime", "client", "websocket", "ping-zero"]
+}

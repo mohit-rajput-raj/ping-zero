@@ -1,0 +1,40 @@
+{
+  "name": "@ping-zero/prisma",
+  "version": "0.1.0",
+  "description": "Prisma database adapter for ping-zero realtime messaging",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "echo 'no lint configured'"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.9.0",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "5.9.2"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ping-zero",
+    "directory": "packages/prisma"
+  },
+  "homepage": "https://github.com/your-username/ping-zero#readme",
+  "keywords": ["prisma", "chat", "realtime", "messaging", "ping-zero"]
+}

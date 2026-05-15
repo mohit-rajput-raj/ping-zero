@@ -1,0 +1,45 @@
+{
+  "name": "@ping-zero/server",
+  "version": "0.1.0",
+  "description": "Realtime messaging server for ping-zero — Socket.IO powered chat infrastructure",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "echo 'no lint configured'"
+  },
+  "dependencies": {
+    "@ping-zero/prisma": "workspace:*",
+    "socket.io": "^4.8.0"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.9.0",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.30",
+    "typescript": "5.9.2"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ping-zero",
+    "directory": "packages/server"
+  },
+  "homepage": "https://github.com/your-username/ping-zero#readme",
+  "keywords": ["socket.io", "chat", "realtime", "messaging", "websocket", "ping-zero"]
+}
