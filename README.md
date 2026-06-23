@@ -490,3 +490,5 @@ MIT © ping-zero
 <p align="center">
   <strong>Built with ❤️ for developers who just want chat to work.</strong>
 </p>
+
+///halted mode =>production is halted due to a techinical issue
