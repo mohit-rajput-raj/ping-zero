@@ -491,4 +491,4 @@ MIT © ping-zero
   <strong>Built with ❤️ for developers who just want chat to work.</strong>
 </p>
 
-///halted mode =>production is halted due to a techinical issue
+///halted mode =>production is halted due to a techinical issue , i am sorry for this bad services 
